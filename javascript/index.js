@@ -17,7 +17,7 @@ const app = createApp({
           alert('login success')
           const { token, expired } = res.data
           document.cookie = `yuanToken=${token}; expires=${new Date(expired)}`;
-          window.location = 'product_week2.html'
+          window.location = 'products_week3.html'
         })
         .catch((err) => {
           console.dir(err)
